@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-image: url(./ImgProj1/Imagem_Fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,60 +11,51 @@ body{
     overflow-x: hidden;
 }
 
-header{
+header {
     font-size: 30px;
-    padding: 30px;
-}
-
-header ul{
-    list-style-type: none;
-    display: flex;
     color: #272727;
-}
-
-header ul li{
-    background-color: #ffc600;
-    padding: 1px 60px;
-    margin-top: 20px;
-}
-
-header a{
-    text-decoration: none;
-    color: #272727;
-}
-
-
-.menu ul li{
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
-main{
     padding: 35px;
 }
 
-.conteiner{
+.menu{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.menu button{
+    background-color: #ffc600;
+    color: #272727;
+    padding: 20px;
+    font-size: 25px;
+}
+
+main {
+    padding: 35px;
+}
+
+.conteiner {
     display: flex;
+    height: 400px;
 }
 
-.ulustracao{
-    height: 350px;
-    width: 900px;
-    margin-right: 20px;
-    background-image: url(./ImgProj1/ilustracao2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+#subconteiner{
+    flex-grow: 2;
+    display: grid;
+    margin-right: 10px;
+}
+
+.ulustracao {
+    background-image: url(./ImgProj1/_d18c9f9f-3897-4a50-85e6-104605c29384.jfif);
     background-position: center;
-    padding-top: 50px;
 }
 
-.ulustracao h2, p{
+.ulustracao h2, p {
     font-size: 30px;
     color: #272727;
 }
 
-.titulo1 h2{
+.titulo1 h2 {
     margin-top: 10%;
     margin-bottom: 10px;
     background-color: #ffc600;
@@ -74,176 +65,132 @@ main{
 
 }
 
-.legend p{
+.legend p {
     background-color: #ffc600;
     width: 100px;
     padding: 5px;
     margin-left: 30px;
-}    
-
-.precos{
-    display: inline-block;
 }
 
-.precoTaco{
-    height: 180px;
-    width: 360px;
+#subconteiner2{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.precoTaco {
     background-color: #ffc600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
-.descricao h1{
-    text-align: center;
-    padding-top: 50px;
-    color: #272727;
-    font-size: 25pt;
-
-}
-
-
-.descricao p{
-    text-align: center;
-}
-
-.precosug{
-    height: 180px;
-    width: 360px;
-    background-color: #ffc600;
-}
-
-.descricao2 h1{
-    text-align: center;
-    margin-top: 40px;
-    padding-top: 50px;
+.descricao h1 {
     color: #272727;
     font-size: 25pt;
 }
 
-
-.descricao2 p{
+.descricao p {
     text-align: center;
 }
 
-.conteiner2{
+.precosug {
+    background-color: #ffc600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.descricao2 h1 {
+    color: #272727;
+    font-size: 25pt;
+}
+
+.descricao2 p {
+    text-align: center;
+}
+
+.conteiner2 {
     display: flex;
     grid-gap: 20px;
-
 }
 
-.conteiner2 section{
+.conteiner2 section {
     width: 300px;
     height: 170px;
     background-color: white;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 20px;
 }
 
-.taco img{
-    max-width: 80px;
-}
-
-.imgTaco{
-    text-align: center;
-}
-
-.imgTaco figcaption{
-    font-weight: bold;
-}
-
-.taco p{
+.conteiner2 p{
     font-size: 13px;
     text-align: center;
 }
 
-.bebida img{
+.conteiner2 img {
     max-width: 80px;
 }
 
-.imgBebida{
+.imgTaco, .imgBebida, .imgVinho, .imgMusica{
     text-align: center;
-}
-
-.imgBebida figcaption{
     font-weight: bold;
 }
 
-.bebida p{
-    font-size: 13px;
-    text-align: center;
-}
-
-.vinhos img{
-    max-width: 80px;
-}
-
-.imgVinho{
-    text-align: center;
-}
-
-.imgVinho figcaption{
-    font-weight: bold;
-}
-
-.vinhos p{
-    font-size: 13px;
-    text-align: center;
-
-}
-
-.musica img{
-    max-width: 80px;
-}
-
-.imgMusica{
-    text-align: center;
-}
-
-.imgMusica figcaption{
-    font-weight: bold;
-}
-
-.musica p{
-    font-size: 13px;
-    text-align: center;
-
-}
-
-
-.ap2{
+.ap2 {
     background-color: white;
     display: flex;
     margin-top: 20px;
     height: 400px;
 }
 
-.imgTaco2{
-    display: flex;
-    align-items: center;
-    margin-right: 50px;
-}
-
-.imgTaco2 img{
+.imgTaco2 {
+    flex-grow: 1;
+    background-image: url(./ImgProj1/_97d559d6-3027-4e38-ab5d-3284f4aeaa48.jfif);
     width: 400px;
-    margin-left: 25px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
 }
 
-.descTaco2{
+.descTaco2 {
     width: 300px;
-    margin-top: auto;
-    margin-bottom: auto;
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 5%;
 }
 
-.descTaco2 h4, p{
+.descTaco2 h4, p {
     color: #272727;
-    margin: 0;
 }
 
-.tituloDesc h4{
+.tituloDesc h4 {
     font-size: 25pt;
 }
 
-.textoDesc p{
+.textoDesc p {
     font-size: 15pt;
     margin-top: 15px;
 }
 
+#pedido{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pedido a{
+    color: azure;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 23px;
+    height: 10%;
+    padding: 10px;
+    text-align: center;
+    background-color: #272727;
+
+}
